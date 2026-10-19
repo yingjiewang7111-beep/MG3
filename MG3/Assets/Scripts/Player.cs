@@ -84,7 +84,9 @@ public class Player : MonoBehaviour
     // This method is called when the player kicks a Kickable item.
     public void IncreasePoints()
     {
-        // Inside this method, increase the value of _points by one,
+       _points++;
+        _pointsText.text = "Points: " + _points.ToString();
+       // Inside this method, increase the value of _points by one,
         // and update the _pointsText text with text displaying the new value of _points.
         
     }
